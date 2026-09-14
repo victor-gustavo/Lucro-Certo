@@ -7,6 +7,64 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <img src="#" alt="">
+        <div class="title-header">
+            <h1>LucroCerto</h1>
+            <span>Estimador de lucros para marketpplace</span>
+        </div>
+    </header>
+
+    <main>
+        <title>
+            <h1>Estimador de lucro</h1>
+            <p>Descubra quanto você realmente lucra em cada venda no marketplace</p>
+        </title>
+
+        <form method="post">
+            <fieldset>
+                <label>Marketplace</label>
+                <select name="marketplace" id="marketplace">
+                    <option value="mercado-livre">Mercado Livre</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="shopee">Shopee</option>
+                    <option value="amazom">Amazon</option>
+                    <option value="shein">Shein</option>
+                </select>
+                <span>Taxa aplicada automaticamente: 16% + R$ 6,00 por envio</span>
+            </fieldset>
+        
+            <fieldset>
+                <div class="container-product,cost">
+                    <label for="product-cost">Custo do produto(R$)</label>
+                    <input type="text" name="product-cost" id="product-cost">
+                </div>
+
+                <div class="container-packaging-cost">
+                    <label for="">Custo da embalagem(R$)</label>
+                    <input type="text" name="packaging-cost" id="packaging-cost">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="sale-price">Preço da venda(R$)</label>
+                <input type="text" name="sale-price" id="sale-price">
+            </fieldset>
+
+            <div class="divider-edge"></div>
+
+            <div class="rate-information">
+                <span id="fee-information">Taxa da plataforma(Mercado Livre)</span>
+                <span class="fee-amount">16% + R%6,00</span>
+            </div>  
+
+            <button type="submit">
+                Calcular lucro
+                <img src="#" alt="">
+            </button>
+        </form>
+
+        <p>Estimativa baseada nas taxas vigentes de cada marketplace em setembro de 2026. Confirme sempre os valores atualizados na plataforma. </p>
+    </main>
 </body>
 </html>
