@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*cor de funo*/
+    --bg-primary: #F6F8FA;
+    --bg-secondary: #FFFFFF;
+    --text-color-primary: #181F2B;
+    --text-color-secondary:#5E6B7C;
+    --text-color-white: #FFFFFF;
+    --btn-color: #122647;
+
+    /*fontes*/
+    --ff-family: 'Public-sans', sans-serif;
+    --label: 500 0.8125rem/100% var(--ff-family);
+    --text-sm: 400 0.75rem/100% var(--ff-family);
+    --text-md: 500 1rem/100% var(--ff-family);
+    --text-result: 600 0.875/100% var(--ff-family);
+    --tittle: 700 2.125/100% var(--ff-family);
+}
