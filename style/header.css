@@ -1,0 +1,35 @@
+header{
+    align-items: center;
+    width: 100vw;
+    padding: 1rem; 
+    gap: .5rem;
+    background-color: var(--bg-secondary);
+    border-bottom: .5px solid var(--border-color);
+
+    .container{
+        display: flex;
+        gap: .5rem;
+        .icon-container{
+            height: 2.25rem;
+            width: 2.25rem;
+            background-color: var(--btn-color);
+            border-radius: .5rem;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                height: 1.25rem;
+                width: 1.25rem;
+            }
+        }
+
+        .title-header{
+            display: grid;
+            gap: .325rem;
+
+            h1{
+                font: var(--text-md);
+            }
+        }
+    }
+}

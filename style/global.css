@@ -1,19 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     /*cor de funo*/
-    --bg-primary: #F6F8FA;
+    --bg-primary: #F5F5F5;
     --bg-secondary: #FFFFFF;
     --text-color-primary: #181F2B;
     --text-color-secondary:#5E6B7C;
     --text-color-white: #FFFFFF;
     --btn-color: #122647;
+    --border-color: #E3E7ED;
 
     /*fontes*/
     --ff-family: 'Public-sans', sans-serif;
     --label: 500 0.8125rem/100% var(--ff-family);
     --text-sm: 400 0.75rem/100% var(--ff-family);
     --text-md: 500 1rem/100% var(--ff-family);
-    --text-result: 600 0.875/100% var(--ff-family);
-    --tittle: 700 2.125/100% var(--ff-family);
+    --text-result: 700 0.875/100% var(--ff-family);
+    --title: 600 2.125rem/100% var(--ff-family);
 }
+
+label{
+    font: var(--label);
+}
+
+span{
+    font: var(--text-sm);
+    color: var(--text-color-secondary);
+}
+
+p{
+    font: var(--text-md);
+    color: var(--text-color-secondary);
+}
+
+h1{
+    font: var(--title);
+    color: var(--btn-color);
+}
+
+body{
+    background-color: var(--bg-primary);
+}
+
+.error{
+    display: none;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: #D0021B;
+}
+
+input:required:user-invalid + .error{
+    display: flex;
+}
+
+input:required:user-invalid{
+    outline: 1px solid #D0021B;
+}
+
+
+
+

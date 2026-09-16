@@ -1,0 +1,108 @@
+main{
+    max-width: 35rem;
+    width: 100%;
+    margin: 3rem auto;
+    display: grid;
+    gap: 1.5rem;
+
+    div{
+        text-align: center;
+        display: grid;
+        gap: .375rem;
+    }
+
+    form{
+        padding: 2.5rem;
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: .75rem;
+        display: grid;
+        gap: 1.5rem;
+
+        fieldset{
+            display: grid;
+            align-items: start;
+            gap: .5rem;
+            border: none;
+        }
+
+        fieldset:nth-child(2){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            
+            div{
+                text-align: start;
+            }
+        }
+
+        input, select,button{
+            width: 100%;
+            padding: .75rem;
+            border-radius: .5rem;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-primary);
+
+            &:hover, &:focus{
+                outline: 1px solid var(--btn-color);
+            }
+        }
+
+        select{
+            -webkit-appearance: none;
+            background-image: url(../assets/icons/arrow-down.svg);
+            background-position: right .75rem center;
+            background-repeat: no-repeat;
+            }
+        
+        button{
+            background-color: var(--btn-color);
+            color: var(--text-color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            &:hover, &:focus{
+                outline: none;
+            }
+        }
+
+        .divider-edge{
+            height: 1px;
+            background-color: var(--border-color);
+            width: 100%;
+        }
+
+        .rate-information{
+            display: flex;
+            justify-content: space-between;
+
+            .fee-amount{
+                font: var(--text-result);
+                color: var(--text-color-primary);
+            }
+        }
+    }
+}
+
+@media(width < 80rem){
+    main{
+        div{
+            max-width: 90vw;
+            width: 100%;
+            margin: auto;
+
+        }
+        form{
+            margin: auto;
+            max-width: 90vw;
+            width: 100%;
+
+            fieldset:nth-child(2){
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <header>
-        <div class="icon-container">
-            <img src="assets/icons/trending-up-stroke-rounded.svg" alt="">
-        </div>
-        <div class="title-header">
-            <h1>LucroCerto</h1>
-            <span>Estimador de lucros para marketpplace</span>
-        </div>
+    <header class="flex">
+        <div class="container">
+            <div class="icon-container flex">
+                <img src="assets/icons/trending-up.svg" alt="">
+            </div>
+            <div class="title-header">
+                <h1>LucroCerto</h1>
+                <span>Estimador de lucros para marketpplace</span>
+            </div>
+        </div>  
     </header>
-
     <main>
-        <title>
+        <div>
             <h1>Estimador de lucro</h1>
             <p>Descubra quanto você realmente lucra em cada venda no marketplace</p>
-        </title>
+        </div>
 
         <form method="post">
             <fieldset>
@@ -37,12 +38,13 @@
             </fieldset>
         
             <fieldset>
-                <div class="container-product,cost">
+                <div>
                     <label for="product-cost">Custo do produto(R$)</label>
-                    <input type="text" name="product-cost" id="product-cost">
+                    <input type="text" name="product-cost" id="product-cost" required>
+                    <div class="error"><img src="assets/icons/alert-circle.svg" alt="icone de alerta">Preencha o campo com o dado solicitado</div>
                 </div>
 
-                <div class="container-packaging-cost">
+                <div>
                     <label for="">Custo da embalagem(R$)</label>
                     <input type="text" name="packaging-cost" id="packaging-cost">
                 </div>
@@ -50,23 +52,26 @@
 
             <fieldset>
                 <label for="sale-price">Preço da venda(R$)</label>
-                <input type="text" name="sale-price" id="sale-price">
+                <input type="text" name="sale-price" id="sale-price" required>
+                <div class="error"><img src="assets/icons/alert-circle.svg" alt="icone de alerta">Preencha o campo com o dado solicitado</div>  
             </fieldset>
 
             <div class="divider-edge"></div>
 
             <div class="rate-information">
-                <span id="fee-information">Taxa da plataforma(Mercado Livre)</span>
-                <span class="fee-amount">16% + R%6,00</span>
+                <span id="fee-information">Taxa da plataforma (Mercado Livre)</span>
+                <span class="fee-amount">16% + R$6,00</span>
             </div>  
 
             <button type="submit">
                 Calcular lucro
-                <img src="#" alt="">
+                <img src="assets/icons/arrow-right.svg" alt="">
             </button>
         </form>
 
-        <p>Estimativa baseada nas taxas vigentes de cada marketplace em setembro de 2026. Confirme sempre os valores atualizados na plataforma. </p>
+        <footer>
+            <p>Estimativa baseada nas taxas vigentes de cada marketplace em setembro de 2026. Confirme sempre os valores atualizados na plataforma.</p>
+        </footer>
     </main>
 </body>
 </html>
