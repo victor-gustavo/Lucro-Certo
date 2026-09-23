@@ -35,13 +35,17 @@ main{
                 display: flex;
                 gap: 1rem;
 
+                div{
+                    width: 100%;
+                }
+
                 .select-category{
-                    display: grid;
+                    display: none;
                 }
             }
         }
 
-        fieldset:nth-child(2){
+        fieldset:nth-child(3){
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
