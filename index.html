@@ -26,14 +26,27 @@
 
         <form method="post">
             <fieldset>
-                <label>Marketplace</label>
-                <select name="marketplace" id="marketplace">
-                    <option value="mercado-livre">Mercado Livre</option>
-                    <option value="tiktok">TikTok</option>
-                    <option value="shopee">Shopee</option>
-                    <option value="amazom">Amazon</option>
-                    <option value="shein">Shein</option>
-                </select>
+                <div class="container-marketplace">
+                    <div class="select-marketplave">
+                        <label>Marketplace</label>
+                        <select name="marketplace" id="marketplace">
+                            <option value="Mercado Livre">Mercado Livre</option>
+                            <option value="Tiktok">TikTok</option>
+                            <option value="Shopee">Shopee</option>
+                            <option value="Amazom">Amazon</option>
+                            <option value="Shein">Shein</option>
+                        </select>
+                    </div>
+
+                    <div class="select-category ">
+                        <label for="category">Categoria</label>
+                        <select name="category" id="category">
+                            <option value="classic">Clássico</option>
+                            <option value="remium">Premium</option>
+                        </select>
+                    </div>
+                
+                </div>
                 <span>Taxa aplicada automaticamente: 16% + R$ 6,00 por envio</span>
             </fieldset>
         
@@ -59,7 +72,7 @@
             <div class="divider-edge"></div>
 
             <div class="rate-information">
-                <span id="fee-information">Taxa da plataforma (Mercado Livre)</span>
+                <span id="fe-informatio">Taxa da plataforma (Mercado Livre)</span>
                 <span class="fee-amount">16% + R$6,00</span>
             </div>  
 

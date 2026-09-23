@@ -24,6 +24,21 @@ main{
             align-items: start;
             gap: .5rem;
             border: none;
+
+            div{
+                justify-items: start;
+            }
+        }
+
+        fieldset:nth-child(1){
+           .container-marketplace{
+                display: flex;
+                gap: 1rem;
+
+                .select-category{
+                    display: grid;
+                }
+            }
         }
 
         fieldset:nth-child(2){
