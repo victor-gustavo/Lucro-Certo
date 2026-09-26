@@ -6,3 +6,8 @@
     gap: .5rem;
 }
 
+.two-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}

@@ -18,15 +18,14 @@ main{
         border-radius: .75rem;
         display: grid;
         gap: 1.5rem;
-
+        
         fieldset{
             display: grid;
-            align-items: start;
             gap: .5rem;
             border: none;
 
-            div{
-                justify-items: start;
+            label{
+                text-align: start;
             }
         }
 
@@ -49,22 +48,6 @@ main{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
-            
-            div{
-                text-align: start;
-            }
-        }
-
-        input, select,button{
-            width: 100%;
-            padding: .75rem;
-            border-radius: .5rem;
-            border: 1px solid var(--border-color);
-            background-color: var(--bg-primary);
-
-            &:hover, &:focus{
-                outline: 1px solid var(--btn-color);
-            }
         }
 
         select{
